@@ -1,117 +1,73 @@
 {
-  "_args": [
-    [
-      "@geoman-io/leaflet-geoman-free@2.9.0",
-      "/Users/NoName/Documents/GitHub/Training-Targets"
-    ]
-  ],
-  "_from": "@geoman-io/leaflet-geoman-free@2.9.0",
-  "_id": "@geoman-io/leaflet-geoman-free@2.9.0",
+  "_from": "leaflet-minimap",
+  "_id": "leaflet-minimap@3.6.1",
   "_inBundle": false,
-  "_integrity": "sha512-KTBxA1IY0uQ4/IB1bQ/pIUGEh+0pqYL8YaTjBgHw9/aQXxchXYz+lTL84HQcnbWsTkCSzdVKqEv/PPA/muQ6PQ==",
-  "_location": "/@geoman-io/leaflet-geoman-free",
+  "_integrity": "sha1-KkP/Oz2UekWgrPS978llBbZzpsY=",
+  "_location": "/leaflet-geoman",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "tag",
     "registry": true,
-    "raw": "@geoman-io/leaflet-geoman-free@2.9.0",
-    "name": "@geoman-io/leaflet-geoman-free",
-    "escapedName": "@geoman-io%2fleaflet-geoman-free",
-    "scope": "@geoman-io",
-    "rawSpec": "2.9.0",
+    "raw": "leaflet-geoman",
+    "name": "leaflet-geoman",
+    "escapedName": "leaflet-geoman",
+    "rawSpec": "",
     "saveSpec": null,
-    "fetchSpec": "2.9.0"
+    "fetchSpec": "latest"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@geoman-io/leaflet-geoman-free/-/leaflet-geoman-free-2.9.0.tgz",
-  "_spec": "2.9.0",
+  "_resolved": "https://registry.npmjs.org/leaflet-geoman/-/leaflet-geoman-3.6.1.tgz",
+  "_shasum": "2a43ff3b3d947a45a0acf4bdefc96505b673a6c6",
+  "_spec": "leaflet-geoman",
   "_where": "/Users/NoName/Documents/GitHub/Training-Targets",
   "author": {
-    "name": "Sumit Kumar",
-    "email": "sumit@geoman.io",
-    "url": "http://geoman.io/leaflet-geoman"
+    "name": "Norkart AS"
   },
   "bugs": {
-    "url": "https://github.com/geoman-io/leaflet-geoman/issues"
+    "url": "https://github.com/Norkart/Leaflet-geoman/issues"
   },
-  "dependencies": {
-    "@turf/boolean-contains": "^6.0.1",
-    "@turf/kinks": "6.x",
-    "@turf/line-intersect": "^6.0.2",
-    "@turf/line-split": "^5.1.5",
-    "lodash": "^4.17.15",
-    "polygon-clipping": "^0.15.1"
-  },
-  "description": "A Leaflet Plugin For Editing Geometry Layers in Leaflet 1.0",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A plugin for Leaflet that provides a geoman in the corner of the map view.",
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "babel-loader": "^8.1.0",
-    "copy-webpack-plugin": "^6.2.1",
-    "css-loader": "^3.5.3",
-    "cypress": "^3.8.3",
-    "cypress-wait-until": "^1.7.1",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-config-prettier": "^3.6.0",
-    "eslint-plugin-cypress": "^2.10.3",
-    "eslint-plugin-import": "^2.20.2",
-    "file-loader": "^4.3.0",
-    "leaflet": "^1.6.0",
-    "mini-css-extract-plugin": "^0.8.2",
-    "prettier": "^1.19.1",
-    "prosthetic-hand": "^1.3.1",
-    "uglifyjs-webpack-plugin": "^2.2.0",
-    "url-loader": "^2.3.0",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "clean-css": "3.0.7",
+    "happiness": "^1.0.7",
+    "leaflet": ">=1.0.3",
+    "ncp": "1.0.1",
+    "svg2png": "1.1.0",
+    "svgo": "0.5.0",
+    "uglify-js": "2.6.0"
   },
-  "files": [
-    "dist"
-  ],
-  "homepage": "https://geoman.io/leaflet-geoman",
+  "happiness": {
+    "globals": [
+      "define",
+      "L"
+    ]
+  },
+  "homepage": "https://github.com/orams123/Leaflet-geoman.git",
   "keywords": [
+    "maps",
     "leaflet",
-    "polygon management",
-    "geometry editing",
-    "map data",
-    "map overlay",
-    "polygon",
-    "geojson",
-    "leaflet-draw",
-    "data-field-geojson",
-    "ui-leaflet-draw"
+    "client",
+    "geoman"
   ],
-  "license": "MIT",
-  "main": "dist/leaflet-geoman.min.js",
-  "name": "@geoman-io/leaflet-geoman-free",
-  "peerDependencies": {
-    "leaflet": "^1.2.0"
-  },
-  "prettier": {
-    "trailingComma": "es5",
-    "tabWidth": 2,
-    "semi": true,
-    "singleQuote": true
-  },
+  "license": "BSD-2-Clause",
+  "main": "dist/Control.geoman.min.js",
+  "name": "leaflet-geoman",
   "repository": {
     "type": "git",
-    "url": "git://github.com/geoman-io/leaflet-geoman.git"
+    "url": "git+https://github.com/orams123/Leaflet-geoman.git"
   },
   "scripts": {
-    "build": "webpack --config=webpack.build.js",
-    "cypress": "cypress open",
-    "dev": "webpack --config=webpack.dev.js",
-    "eslint": "eslint src/ --fix",
-    "eslint-check": "eslint --print-config . | eslint-config-prettier-check",
-    "lint": "npm run eslint && npm run prettier",
-    "prepare": "npm run build",
-    "prettier": "prettier --write '{src,cypress}/**/*.{js,css}'",
-    "start": "npm run dev",
-    "test": "cypress run"
+    "build": "npm run build:css && npm run build:js && npm run build:img",
+    "build:css": "cleancss  --skip-rebase --output dist/Control.geoman.min.css src/Control.geoman.css",
+    "build:img": "svgo src/images/toggle.svg dist/images/toggle.svg && node buildscripts/svgtopng.js",
+    "build:js": "uglifyjs  --output dist/Control.geoman.min.js src/Control.geoman.js",
+    "preversion": "npm test && npm run build",
+    "test": "happiness src/**/*.js"
   },
-  "types": "dist/leaflet-geoman.d.ts",
-  "version": "2.9.0"
+  "version": "3.6.1"
 }
